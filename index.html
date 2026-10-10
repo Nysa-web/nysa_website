@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>NYSA — Nothing Ordinary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpeg" href="assets/nysa-logo.jpeg">
+</head>
+
+<body>
+
+    <!-- Preloader Screen -->
+    <div id="nysa-preloader">
+        <div class="loader-content">
+            <img src="assets/nysa-logo.jpeg" alt="NYSA Logo" class="loader-logo">
+            <h1 class="loader-title">NYSA</h1>
+            <p class="loader-subtitle">Nothing Ordinary</p>
+            <div class="loader-progress-bar">
+                <div id="loader-progress"></div>
+            </div>
+            <div id="loader-counter">0%</div>
+        </div>
+    </div>
+
+    <header class="header"><a class="logo" href="index.html" aria-label="NYSA"><img src="assets/nysa-logo.jpeg"
+                alt="NYSA logo"></a>
+        <nav><a href="index.html">Home</a><a href="shop.html">New Arrivals</a><a
+                href="shop.html?cat=unstitched">Unstitched</a><a href="shop.html?cat=stitched">Stitched</a><a
+                href="shop.html?cat=ready">Ready to Wear</a><a href="shop.html?cat=luxury">Luxury</a><a
+                href="shop.html?cat=sale">Sale</a></nav>
+        <div class="actions"><a href="wishlist.html">♡</a><a href="cart.html">Bag (<span id="cartCount">0</span>)</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero"
+            style="background-image:linear-gradient(90deg,rgba(35,30,25,.38),rgba(35,30,25,.02)),url('https://nysa-couture-studio.lovable.app/assets/nysa-hero-BqJJNbSA.jpg');background-size:cover;background-position:center">
+            <div>
+                <p class="eyebrow">Autumn Atelier · 2026</p>
+                <h1>Nothing<br>Ordinary</h1>
+                <p>Hand-set embroidery and luminous textiles, composed for the quiet confidence of a modern Pakistani
+                    wardrobe.</p><a class="btn" href="shop.html">Shop now</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow">The NYSA wardrobe</p>
+                    <h2>Shop by category</h2>
+                </div>
+            </div>
+            <div class="categories">
+                <a href="shop.html?cat=new">
+                    <div>New Arrivals<small>Discover</small></div>
+                </a>
+                <a href="shop.html?cat=unstitched">
+                    <div>Unstitched<small>Discover</small></div>
+                </a>
+                <a href="shop.html?cat=stitched">
+                    <div>Stitched<small>Discover</small></div>
+                </a>
+                <a href="shop.html?cat=ready">
+                    <div>Ready to Wear<small>Discover</small></div>
+                </a>
+                <a href="shop.html?cat=luxury">
+                    <div>Luxury<small>Discover</small></div>
+                </a>
+                <a href="shop.html?cat=sale">
+                    <div>Sale<small>Discover</small></div>
+                </a>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow">Just in</p>
+                    <h2>New arrivals</h2>
+                </div><a href="shop.html">View all →</a>
+            </div>
+            <div class="products" id="newProducts"></div>
+        </section>
+
+        <section class="editorial">
+            <div class="editorial-copy">
+                <p class="eyebrow">The New NYSA Edit</p>
+                <h2>Poise, in every thread.</h2>
+                <p>A study in restrained ornament: heirloom techniques meet clean, contemporary silhouettes in our
+                    defining edit.</p><a class="btn dark" href="shop.html?cat=luxury">Shop collection</a>
+            </div>
+            <div class="editorial-image"
+                style="background-image:url('https://nysa-couture-studio.lovable.app/assets/nysa-editorial-D_HZrEHn.jpg');background-size:cover;background-position:center">
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="section-head">
+                <div>
+                    <p class="eyebrow">Bestsellers</p>
+                    <h2>The signatures</h2>
+                </div><a href="shop.html">View all →</a>
+            </div>
+            <div class="products" id="bestProducts"></div>
+        </section>
+
+        <section class="instagram">
+            <p class="eyebrow">@nysaofficial</p>
+            <h2>Follow NYSA</h2>
+            <p>Discover the latest NYSA looks and collections.</p>
+            <div class="insta-grid">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </section>
+        <section class="newsletter">
+            <p class="eyebrow">The private list</p>
+            <h2>Join the NYSA world</h2>
+            <p>Be the first to discover new collections, exclusive launches and special offers.</p>
+            <form onsubmit="subscribe(event)"><input type="email" required
+                    placeholder="Your email address"><button>Subscribe</button></form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-brand"><a class="logo" href="index.html" aria-label="NYSA"><img src="assets/nysa-logo.jpeg"
+                    alt="NYSA logo"></a></div>
+        <div><b>Customer care</b><a href="contact.html">Contact Us</a><a href="#">Shipping & Delivery</a><a
+                href="#">Returns & Exchange</a><a href="#">Size Guide</a><a href="#">FAQs</a></div>
+        <div><b>About NYSA</b><a href="#">About Us</a><a href="#">Our Story</a><a href="contact.html">Contact</a><a
+                href="#">Store Locator</a></div>
+        <div><b>Shop</b><a href="shop.html">New Arrivals</a><a href="shop.html?cat=unstitched">Unstitched</a><a
+                href="shop.html?cat=stitched">Stitched</a><a href="shop.html?cat=ready">Ready to Wear</a><a
+                href="shop.html?cat=luxury">Luxury</a></div>
+        <div><b>Contact</b>
+            <p>Phone: +92 342-2706440</p>
+            <p>WhatsApp: +92 342-2706440</p>
+            <p>Instagram: nysa</p>
+            <p>Facebook: Nysa by Abdul Bari</p>
+        </div>
+    </footer>
+    <div class="copyright">© 2026 NYSA — Nothing Ordinary · Privacy Policy · Terms & Conditions</div>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

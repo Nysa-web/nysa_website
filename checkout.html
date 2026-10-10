@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Checkout — NYSA</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NYSA — Nothing Ordinary</title>
+<link rel="icon" type="image/jpeg" href="assets/nysa-logo.jpeg">
+</head>
+
+<body>
+    <main class="checkout"><a class="logo" href="index.html" aria-label="NYSA"><img src="assets/nysa-logo.jpeg"
+                alt="NYSA logo"></a>
+        <h1>Checkout</h1>
+        <form onsubmit="placeOrder(event)" class="checkout-form"><input required placeholder="Full name"><input required
+                type="tel" placeholder="Phone number"><input required type="email" placeholder="Email"><textarea
+                required placeholder="Complete delivery address"></textarea><select required>
+                <option value="">Payment method</option>
+                <option>Cash on Delivery</option>
+                <option>Bank Transfer</option>
+            </select><button class="btn dark">Place Order</button></form>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

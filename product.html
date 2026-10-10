@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Product — NYSA</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>NYSA — Nothing Ordinary</title>
+<link rel="icon" type="image/jpeg" href="assets/nysa-logo.jpeg">
+</head>
+
+<body>
+    <header class="header"><a class="logo" href="index.html" aria-label="NYSA"><img src="assets/nysa-logo.jpeg"
+                alt="NYSA logo"></a>
+        <nav><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="contact.html">Contact</a></nav>
+        <div class="actions"><a href="wishlist.html">♡</a><a href="cart.html">Bag (<span id="cartCount">0</span>)</a>
+        </div>
+    </header>
+    <main class="product-page" id="productPage"></main>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+    <script>renderProduct()</script>
+</body>
+
+</html>
